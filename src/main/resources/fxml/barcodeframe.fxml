@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="491.0" style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcode.Controller">
+    <children>
+        <Button fx:id="close" layoutX="450.0" layoutY="-12.0" minHeight="20.0" minWidth="29.0" mnemonicParsing="false" onAction="#exit" prefHeight="52.0" prefWidth="54.0" styleClass=".button" stylesheets="@../style/exit.css" text="X" AnchorPane.rightAnchor="-13.0" AnchorPane.topAnchor="-12.0" />
+        <Label alignment="CENTER" layoutY="25.0" prefHeight="52.0" prefWidth="491.0" text="BAR CODE GENERATOR" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <VBox alignment="TOP_CENTER" layoutY="58.0" prefHeight="485.0" prefWidth="431.0" spacing="20.0" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+            <children>
+                <Separator layoutX="38.0" layoutY="29.0" opacity="0.7" prefHeight="6.0" prefWidth="416.0" />
+                <TextField fx:id="first" alignment="CENTER" layoutX="37.0" layoutY="87.0" prefHeight="42.0" prefWidth="416.0" style="-fx-border-color: #f1f1f1; -fx-background-color: #ffffff;" text="7600000000008053" />
+                <Label layoutX="187.0" layoutY="58.0" prefHeight="20.0" prefWidth="110.0" text="POCZĄTEK KODU" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="second" alignment="CENTER" layoutX="38.0" layoutY="176.0" prefHeight="42.0" prefWidth="416.0" style="-fx-border-color: #f1f1f1; -fx-background-color: #ffffff;" text="119,99" />
+                <Label layoutX="209.0" layoutY="148.0" prefHeight="20.0" prefWidth="67.0" text="WARTOŚĆ" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="38.0" layoutY="335.0" opacity="0.7" prefHeight="6.0" prefWidth="416.0" />
+                <Button fx:id="generate" layoutX="40.0" layoutY="263.0" mnemonicParsing="false" onAction="#onActionGenerateBarCode" prefHeight="42.0" prefWidth="416.0" styleClass=".button" stylesheets="@../style/button.css" text="WYGENERUJ">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <HBox alignment="CENTER" layoutX="37.0" layoutY="352.0" prefHeight="160.0" prefWidth="431.0">
+                    <ImageView fx:id="barcode" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
