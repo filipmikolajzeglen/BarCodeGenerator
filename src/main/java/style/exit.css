@@ -1,0 +1,13 @@
+.button {
+	-fx-background-color: none;
+	-fx-text-fill: #000000;
+	-fx-font-size: 15px;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(none);
+	-fx-margin: 0px;
+	-fx-padding: 0px;
+}
+
+.button:hover {
+	-fx-text-fill: #0080c4;
+}
